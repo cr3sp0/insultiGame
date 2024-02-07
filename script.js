@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     function part3(arr) {
         
-            window.location.href = "cr3sp0/insultiGame/risultati.html?arr=" + JSON.stringify(arr);
+            window.location.href = "risultati.html?arr=" + JSON.stringify(arr);
     }
 })
 
