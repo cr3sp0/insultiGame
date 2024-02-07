@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risultati</title>
+    <link rel="stylesheet" href="cr3sp0/insultiGame/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="animazione2"></div>
+        <h1 class="titolo">RISULTATI</h1>
+        <div class="punti" id="punti"></div>
+        <br>
+        <div class="result-container">
+            <div class="result" id="result"></div>
+        </div> 
+        <br>
+        <a href="index.html">torna alla home</a>
+</div>
+    
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const arrString = urlParams.get('arr');
+        length = arrString.length
+        const pointString = urlParams.get('pt');
+        const arr = JSON.parse(arrString);
+
+        const resultDiv = document.getElementById('result');
+        const punti = document.getElementById('punti');
+        resultDiv.textContent = arr.join(', ');
+        punti.textContent = "punti: " + length;
+    </script>
+</body>
+</html>
