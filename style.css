@@ -27,8 +27,8 @@
   }
 
   @keyframes animazione {
-    0%, 50% { background-image: url('cr3sp0/insultiGame/img/img1.png'); }
-    50.01%, 100% { background-image: url('cr3sp0/insultiGame/img/img2.png'); }
+    0%, 50% { background-image: url('img/img1.png'); }
+    50.01%, 100% { background-image: url('img/img2.png'); }
 }
 
 /* Applicazione dell'animazione a un'area */
