@@ -1,0 +1,94 @@
+@import url('https://fonts.cdnfonts.com/css/inter');
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+
+  @keyframes animazione {
+    0%, 50% { background-image: url('img/img1.png'); }
+    50.01%, 100% { background-image: url('img/img2.png'); }
+}
+
+/* Applicazione dell'animazione a un'area */
+.animazione {
+    width: 400px;
+    height: 400px;
+    animation: animazione 1s infinite;
+}
+.animazione2 {
+  width: 200px;
+  height: 200px;
+  animation: animazione 1s infinite;
+}
+
+.inizia {
+  border-radius: 10px;
+  border: 0px;
+  width: 200px;
+  height: 50px;
+}
+.inizia:hover{
+  background-color: #312f2f;
+}
+
+.timer {
+  width: 300px;
+  text-align: center;
+  font-size: 400%;
+}
+
+.text-bar {
+  width: 300px;
+  height: 40px;
+  text-indent: 3px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result {
+  width: 290px;
+}
+
+.result-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  border: solid white 1px;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+ 
