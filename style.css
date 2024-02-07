@@ -33,8 +33,8 @@
 
 /* Applicazione dell'animazione a un'area */
 .animazione {
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     animation: animazione 1s infinite;
 }
 .animazione2 {
@@ -88,6 +88,23 @@
 a {
   text-decoration: none;
   color: white;
+}
+
+.titolo {
+  text-align: center;
+  max-width: 350px;
+}
+
+.descrizione {
+  max-width: 350px;
+}
+
+/* Media query per schermi più piccoli */
+@media screen and (max-width: 600px) {
+  .result-container {
+      width: 100%; /* Usiamo il 100% della larghezza del contenitore */
+      max-width: 300px; /* Massimo di 300px */
+  }
 }
 
 
