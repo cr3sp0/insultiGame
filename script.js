@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
+    const text = document.getElementById("text-bar");
+    text.disabled = true;
     document.getElementById("start-game").addEventListener("click", function() {
         
         document.getElementById("start-game").remove();
@@ -18,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function(){
         if (secondi < 0) {
             clearInterval(interval);
             timer.textContent = 'HAI 30 SECONDI PER INSULTARE ALESSIO...';
+            text.disabled = false;
             part2();
         }
         }, 1000);
