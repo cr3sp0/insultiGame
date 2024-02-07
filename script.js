@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
         if (secondi < 0) {
             clearInterval(interval);
-            timer.textContent = 'HAI 60 SECONDI PER INSULTARE ALESSIO...';
+            timer.textContent = 'HAI 30 SECONDI PER INSULTARE ALESSIO...';
             part2();
         }
         }, 1000);
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(){
         setTimeout(function () {
         text.remove();
         part3(arr);
-        }, 60000);
+        }, 30000);
 
         text.addEventListener('keypress', function (e) {
             if (e.key === 'Enter') {
