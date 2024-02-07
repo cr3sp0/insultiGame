@@ -39,8 +39,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
         text.addEventListener('keypress', function (e) {
             if (e.key === 'Enter') {
-              arr.push(text.value);
-              text.value = "";
+                if(text.value=="" || text.value==" "){
+                    text.value = "";
+                }else{
+                    arr.push(text.value);
+                    text.value = "";
+                }
             }
         });
     }
